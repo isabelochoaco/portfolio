@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif !important;
 }
 
 /********* NAVBAR *******/
@@ -115,4 +115,30 @@ nav ul li {
   background-color: var(--primary-blue);
   color: #fff;
   transition: 0.2s ease-in-out;
+}
+
+/********* ABOUT ME *******/
+.photo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img {
+  width: 14rem;
+  border-radius: 20%;
+  padding: 0.3rem;
+  border: 1px solid #d6ae3f;
+}
+
+.about-heading {
+  color: #d6ae3f;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 468px) {
+  .profile-img {
+    width: 10rem;
+  }
 }
